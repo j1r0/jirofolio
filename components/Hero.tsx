@@ -3,7 +3,7 @@ import { AuroraBackground } from "./ui/Aurora";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { TypeAnimation } from "react-type-animation";
-import MagicButton from "./ui/MagicButton";
+import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
