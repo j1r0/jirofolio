@@ -100,9 +100,9 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-sm md:text-xs lg:text-base z-10 text-white-100">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl z-10 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500">
+          <div className="font-sans font-bold text-lg md:text-xl lg:text-3xl z-10 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500">
             {id === 3 ? (
-              <span className="flex flex-col gap-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500 pt-1 leading-5 md:leading-8">
+              <span className="flex flex-col gap-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500 pt-1 leading-5 lg:leading-7">
                 {title}
                 {subtitle && (
                   <span className="text-sm md:text-base italic">
