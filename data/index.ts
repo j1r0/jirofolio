@@ -1,7 +1,8 @@
+import { title } from "process";
+
 export const navItems = [
     { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
+    { name: "Projects", link: "#projects"},
     { name: "Contact", link: "#contact" },
   ];
   
@@ -12,9 +13,9 @@ export const navItems = [
       description: "Learning to master diverse",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full right-0 opacity-20",
-      titleClassName: "justify-start text-center lg:pt-20",
+      titleClassName: "justify-start text-center lg:pt-10",
       img: "/b5.svg",
-      spareImg: "/grid.svg",
+      spareImg: "",
     },
     {
       id: 2,
@@ -24,7 +25,7 @@ export const navItems = [
       imgClassName: "",
       titleClassName: "justify-start",
       img: "",
-      spareImg: "",
+      spareImg: "/grid.svg",
     },
     {
       id: 3,
@@ -33,7 +34,7 @@ export const navItems = [
       subheading: "Accelerated Master's",
       description: "Soaring through with 5 years of higher-level education.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "opacity-10 -translate-x-20 -translate-y-60",
+      imgClassName: "opacity-5 -translate-x-10 -translate-y-10 flex items-center justify-center h-[110%]",
       titleClassName: "justify-center text-right",
       img: "/erau-logo.png",
       spareImg: "",
@@ -119,4 +120,58 @@ export const navItems = [
       id: 3,
       img: "/link.svg",
     },
+  ];
+  export const technologies1 = [
+    {
+      title: "Next.js",
+    },
+    { 
+      title: "Tailwind CSS",
+    },
+    {
+      title: "Java",
+    },
+    {
+      title: "Python",
+    },
+    {
+      title: "C",
+    }
+  ];
+
+  export const technologies2 = [
+    {
+      title: "JavaScript",
+    },
+    {
+      title: "TypeScript",
+    },
+    {
+      title: "MySQL",
+    },
+    {
+      title: "Node.js",
+
+    },
+    {
+      title: "C++"
+    }
+
+  ]
+  export const technologies3 = [
+    {
+      title: "Express.js",
+    },
+    {
+      title: "Dart",
+    },
+    {
+      title: "MATLAB",
+    },
+    {
+      title: "MongoDB",
+    },
+    {
+      title: "ReactJS"
+    }
   ];

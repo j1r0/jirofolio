@@ -2,6 +2,9 @@ import { cn } from "@/lib/utils";
 import { Globe } from "@/components/ui/Globe";
 import { GridGlobe } from "@/components/ui/GridGlobe";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
+import { InfiniteMovingCards } from "./MovingCards";
+import { technologies1, technologies2, technologies3 } from "@/data";
+import { Spotlight } from "./Spotlight";
 
 export const BentoGrid = ({
   className,
@@ -21,6 +24,7 @@ export const BentoGrid = ({
     </div>
   );
 };
+
 
 export const BentoGridItem = ({
   className,
@@ -48,11 +52,12 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative p-[1px] rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 bg-black-100 dark:bg-gradient-to-b dark:from-stone-300 dark:via-stone-700 dark:to-transparent h-full w-full overflow-hidden",
+        "row-span-1 relative p-[1px] rounded-3xl group/bento hover:shadow-lg hover:shadow-black-200 transition duration-200 justify-between flex flex-col space-y-4 bg-black-100 dark:bg-gradient-to-b dark:from-stone-300 dark:via-stone-700 dark:to-transparent h-full w-full overflow-hidden",
         className
       )}
     >
       <div className={`h-full bg-black-100 rounded-[23px] p-4`}>
+        {/* Images */}
         <div className="w-full h-full absolute">
           {id === 1 ? (
             <img
@@ -92,11 +97,17 @@ export const BentoGridItem = ({
           className={cn(
             titleClassName,
             `relative md:h-full min-h-40 flex flex-col 
-            ${id === 1 ?"group-hover/bento:-translate-y-2 transition duration-200" : id === 3 ? "group-hover/bento:-translate-x-2 transition duration-200" : "group-hover/bento:translate-x-2 transition duration-200"
-        }`
-
+            ${
+              id === 1
+                ? "group-hover/bento:-translate-y-2 transition duration-200"
+                : id === 3
+                ? "group-hover/bento:-translate-x-2 transition duration-200"
+                : "group-hover/bento:translate-x-2 transition duration-200"
+            }`
           )}
         >
+          
+          {/* Titles and Descs */}
           <div className="font-sans font-extralight text-sm md:text-xs lg:text-base z-10 text-white-100">
             {description}
           </div>
@@ -119,53 +130,52 @@ export const BentoGridItem = ({
               `${title}`
             )}
           </div>
-          {id == 2 && <GridGlobe />}
+
+          {/* Grid globe */}
+          {id == 2 &&
+          <div className="opacity-90" >
+           <GridGlobe />
+          </div>
+  }
+
+
+
+          {/* Languages and Frameworks */}
           {id === 1 && (
-            <div className="flex gap-2 lg:gap-3 absolute -bottom-2 w-full">
-              <div className="flex flex-col gap-2 lg:gap-3 flex-1">
-                {["Next.js", "ReactJS", "Java"].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-10 lg:px-3 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-black-200 hover:scale-[103%] hover:bg-black-300 transition duration-200"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col gap-2 lg:gap-3 flex-1">
-                {["Next.js", "ReactJS", "Java"].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-10 lg:px-3 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-black-200 hover:scale-[103%] hover:bg-black-300 transition duration-200"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col gap-2 lg:gap-3 flex-1">
-                {["Next.js", "ReactJS", "Java"].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-10 lg:px-3 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-black-200 hover:scale-[103%] hover:bg-black-300 transition duration-200"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col gap-2 lg:gap-3 flex-1">
-                {["Next.js", "ReactJS", "Java"].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-10 lg:px-3 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-black-200 hover:scale-[103%] hover:opacity-100 hover:bg-black-300 transition duration-200 "
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
- 
+            <div className="-bottom-5 lg:-bottom-20 relative ">
+              <InfiniteMovingCards
+              items= { technologies1 }
+              speed = "normal"
+              pauseOnHover = {true}
+              />
+              <InfiniteMovingCards
+              items= { technologies2 }
+              direction="right"
+              speed = "normal"
+              pauseOnHover = {true}
+              />
+              <InfiniteMovingCards
+              items= { technologies3 }
+              speed = "normal"
+              pauseOnHover = {true}
+              />
             </div>
           )}
+          
         </div>
+                  {/* Spotlights */}
+  {id === 3 && <div>
+          <Spotlight
+            className="-top-40 left-30 md:-left-22 md:-top-20 h-screen"
+            fill="white"
+          />
+          <Spotlight
+            className="h-[80vh] w-[52vw] top-10 left-full"
+            fill="gray"
+          />
+          <Spotlight className="left-0 md:left-10 top-10 md:top-28 h-[40vh]" fill="white" />
+        </div>
+  }
       </div>
     </div>
   );
