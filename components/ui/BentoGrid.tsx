@@ -56,7 +56,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className={`h-full bg-black-100 rounded-[23px] p-4`}>
+      <div className={`h-full bg-black-100 rounded-3xl p-4`}>
         {/* Images */}
         <div className="w-full h-full absolute">
           {id === 1 ? (
@@ -93,6 +93,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
+        {/* Grid Items */}
         <div
           className={cn(
             titleClassName,
@@ -138,11 +139,9 @@ export const BentoGridItem = ({
           </div>
   }
 
-
-
           {/* Languages and Frameworks */}
           {id === 1 && (
-            <div className="-bottom-5 lg:-bottom-20 relative ">
+            <div className="-bottom-5 lg:bottom-0 relative pt-5">
               <InfiniteMovingCards
               items= { technologies1 }
               speed = "normal"

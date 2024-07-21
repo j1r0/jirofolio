@@ -32,7 +32,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx == 3 ? 'text-transparent bg-clip-text bg-gradient-to-br from-stone-500 via-stone-300 to-neutral-200' : idx == 4 ? 'text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500': 'dark:text-white text:black'} opacity-0` }
+              className={`${idx == 2 ? 'text-transparent bg-clip-text bg-gradient-to-br from-stone-500 via-stone-300 to-neutral-200' : idx == 3 ? 'text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500': 'dark:text-white text:black'} opacity-0` }
             >
               {word}{" "}
             </motion.span>

@@ -32,9 +32,6 @@ export const FloatingNav = ({
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
-      } else {
         if (direction < 0) {
           setVisible(true);
         } else {
@@ -42,7 +39,7 @@ export const FloatingNav = ({
         }
       }
     }
-  });
+  );
 
   return (
     <AnimatePresence mode="wait">

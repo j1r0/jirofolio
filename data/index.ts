@@ -11,9 +11,9 @@ export const navItems = [
       id: 1,
       title: "Languages & Frameworks",
       description: "Learning to master diverse",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
       imgClassName: "w-full h-full right-0 opacity-20",
-      titleClassName: "justify-start text-center lg:pt-10",
+      titleClassName: "justify-start text-center lg:pt-3 md:pt-6",
       img: "/b5.svg",
       spareImg: "",
     },
@@ -172,6 +172,6 @@ export const navItems = [
       title: "MongoDB",
     },
     {
-      title: "ReactJS"
+      title: "React"
     }
   ];
