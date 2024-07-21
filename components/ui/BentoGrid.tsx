@@ -141,7 +141,7 @@ export const BentoGridItem = ({
 
           {/* Languages and Frameworks */}
           {id === 1 && (
-            <div className="-bottom-5 lg:bottom-0 relative pt-5">
+            <div className="-bottom-5 lg:bottom-0 relative pt-5 ">
               <InfiniteMovingCards
               items= { technologies1 }
               speed = "normal"
@@ -159,6 +159,7 @@ export const BentoGridItem = ({
               pauseOnHover = {true}
               />
             </div>
+            
           )}
           
         </div>

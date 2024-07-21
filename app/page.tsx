@@ -12,7 +12,6 @@ export default function Home() {
       <div className=" w-screen">
         <FloatingNav 
         navItems={navItems}
-        
         />
         <Hero />
         <Grid />

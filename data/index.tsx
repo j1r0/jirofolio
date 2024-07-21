@@ -1,4 +1,6 @@
 import { title } from "process";
+import { FaJava } from "react-icons/fa6";
+import { SiAndroid, SiBootstrap, SiChakraui, SiDart, SiExpress, SiFlutter, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiReact, SiSqlite, SiTailwindcss, SiVite } from "react-icons/si";
 
 export const navItems = [
     { name: "About", link: "#about" },
@@ -13,7 +15,7 @@ export const navItems = [
       description: "Learning to master diverse",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
       imgClassName: "w-full h-full right-0 opacity-20",
-      titleClassName: "justify-start text-center lg:pt-3 md:pt-6",
+      titleClassName: "justify-start text-center lg:pt-3 md:pt-6 pt-6",
       img: "/b5.svg",
       spareImg: "",
     },
@@ -44,35 +46,27 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "ERAU SASE Website",
+      des: "An engaging and interactive website for a growing school organization with over 100 members. Its creation significantly enhanced the online presence and member engagement.",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      iconLists: [<SiReact />, <SiVite />, <SiTailwindcss />, <SiNodedotjs />, <SiExpress />],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      title: "FitSage: A Home Workout and Nutrition Application",
+      des: "An at-home fitness and nutrition app designed to combat health challenges for students that detailed workouts tracks nutrient intake and body metrics.",
       img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      iconLists: [<SiFlutter />, <SiDart />, <FaJava />, <SiSqlite />, <SiAndroid />],
+      link: "https://github.com/your-username/fit-sage",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+      title: "Visionary",
+      des: "A visually stunning and modern photography website. It functions as a photo database and a dynamic portfolio, showcasing work with a sleek, responsive design.",
       img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      iconLists: [<SiReact />, <SiNodedotjs />, <SiExpress />, <SiMysql />, <SiChakraui />],
+      link: "https://github.com/your-username/visionary-portfolio",
     },
   ];
   
