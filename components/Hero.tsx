@@ -30,7 +30,7 @@ const Hero = () => {
 
   return (
     <div className={`h-screen `}>
-      <div className="h-[50vw] w-screen dark:bg-black-100 bg-white flex items-center justify-center absolute top-0 left-0">
+      <div className="h-[50vw] w-screen bg-black-100  flex items-center justify-center absolute top-0 left-0">
         <div>
           <AuroraBackground>
             <motion.div
@@ -49,7 +49,7 @@ const Hero = () => {
       <div className="">
         <HeroHighlight>
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center h-screen">
-            <span className="uppercase tracking-widest md:text-sm lg:text-base text-xs text-center text-white-100">
+            <span className="uppercase tracking-widest md:text-sm lg:text-base text-xs text-center text-white-200">
               <TypeAnimation
                 sequence={[
                   2000,
@@ -66,10 +66,10 @@ const Hero = () => {
               />
             </span>
             <TextGenerateEffect
-              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+              className="text-center text-[40px] md:text-5xl lg:text-6xl text-white-100"
               words={"Hello, I'm Jim Pamplona"}
             />
-            <p className="text-center text-sm font-light md:tracking-widest mb-4 md:text-lg lg:text-2xl text-white-100 pb-11">
+            <p className="text-center text-sm font-light md:tracking-widest mb-4 md:text-lg lg:text-2xl text-white-200 pb-11">
               I&apos;m a first-generation student from Guam who has faced the unknown and is resiliently turning dreams to reality.
             </p>
 

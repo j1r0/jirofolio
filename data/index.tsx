@@ -54,8 +54,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "FitSage: A Home Workout and Nutrition Application",
-      des: "An at-home fitness and nutrition app designed to combat health challenges for students that detailed workouts tracks nutrient intake and body metrics.",
+      title: "FitSage",
+      des: "An at-home fitness and nutrition app designed to combat health challenges for students that features a workout planner and tracks nutrient intake and body metrics.",
       img: "/p2.svg",
       iconLists: [<SiFlutter />, <SiDart />, <FaJava />, <SiSqlite />, <SiAndroid />],
       link: "https://github.com/your-username/fit-sage",

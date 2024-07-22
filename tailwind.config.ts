@@ -36,8 +36,8 @@ const config = {
         },
         white: {
           DEFAULT: "#f7f7f7",
-          100: "#CECECE",
-          200: "#C1C2D3",
+          100: "#EDEDED",
+          200: "#CECECE",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
