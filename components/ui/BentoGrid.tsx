@@ -5,6 +5,7 @@ import { div } from "three/examples/jsm/nodes/Nodes.js";
 import { InfiniteMovingCards } from "./MovingCards";
 import { technologies1, technologies2, technologies3 } from "@/data";
 import { Spotlight } from "./Spotlight";
+import { Button, MovingBorder } from "./MovingBorder";
 
 export const BentoGrid = ({
   className,
@@ -50,13 +51,16 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   return (
-    <div
-      className={cn(
-        "row-span-1 relative p-[1px] rounded-3xl group/bento hover:shadow-lg hover:shadow-black-200 transition duration-200 justify-between flex flex-col space-y-4 bg-black-100 dark:bg-gradient-to-b dark:from-stone-300 dark:via-stone-700 dark:to-transparent h-full w-full overflow-hidden",
-        className
-      )}
+    <Button
+      containerClassName={className}
+      className="row-span-1 relative p-4 rounded-3xl group/bento hover:shadow-lg hover:shadow-black-200 transition duration-200 justify-between flex flex-col space-y-4 bg-transparent h-full w-full overflow-hidden"
+      as="div"
+      borderClassName="bg-[radial-gradient(var(--white-100)_40%,transparent_60%)]"
+      duration={8000}
     >
-      <div className={`h-full bg-black-100 rounded-3xl p-4`}>
+
+
+
         {/* Images */}
         <div className="w-full h-full absolute">
           {id === 1 ? (
@@ -65,7 +69,7 @@ export const BentoGridItem = ({
               alt={img}
               className={cn(
                 imgClassName,
-                "object-cover, object-center opacity-20"
+                "object-cover, object-center opacity-20 blur-sm"
               )}
             />
           ) : (
@@ -79,7 +83,7 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`w-full h-full absolute right-0 -bottom-5 ${
+          className={`w-full h-full absolute right-0 -bottom-5 blur-sm ${
             id === 1 && "w-full opacity-80"
           }`}
         >
@@ -112,9 +116,9 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-sm md:text-xs lg:text-base z-10 text-white-100">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg md:text-xl lg:text-3xl z-10 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500">
+          <div className="font-sans font-bold text-2xl lg:text-3xl z-10 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500">
             {id === 3 ? (
-              <span className="flex flex-col gap-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500 pt-1 leading-5 lg:leading-7">
+              <span className={cn("flex flex-col gap-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-300 to-stone-500 pt-1 leading-5 lg:leading-7 text-xl lg:text-2xl", titleClassName)}>
                 {title}
                 {subtitle && (
                   <span className="text-sm md:text-base italic">
@@ -141,7 +145,7 @@ export const BentoGridItem = ({
 
           {/* Languages and Frameworks */}
           {id === 1 && (
-            <div className="-bottom-5 lg:bottom-0 relative pt-5 ">
+            <div className="bottom-0 relative pt-5">
               <InfiniteMovingCards
               items= { technologies1 }
               speed = "normal"
@@ -176,7 +180,6 @@ export const BentoGridItem = ({
           <Spotlight className="left-0 md:left-10 top-10 md:top-28 h-[40vh]" fill="white" />
         </div>
   }
-      </div>
-    </div>
+      </Button>
   );
 };

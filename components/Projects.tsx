@@ -7,10 +7,10 @@ import { SlLink } from 'react-icons/sl'
 
 const Projects = () => {
   return (
-        <div className="h-full w-screen dark:bg-black-100 bg-white bg-grid-small-white/[0.1] relative flex flex-col items-center justify-center pt-20">
+        <div className="h-full w-screen dark:bg-black bg-white bg-grid-small-white/[0.15] relative flex flex-col items-center justify-center py-10">
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_0%,transparent_0%,transparent_0%,transparent_0%,black)]"></div>
-      <div className="relative">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_0%,transparent_0%,transparent_0%,transparent_0%,black)]"></div>
+      <div className="relative pb-10">
         <h1 className='text-4xl font-bold text-center'>
           Check out my {" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 via-stone-400 to-stone-50 "> 
@@ -18,10 +18,10 @@ const Projects = () => {
           </span>
         </h1>
       </div>
-      <div className="flex flex-row gap-4 flex-wrap justify-center mx-10 py-10">
+      <div className="flex flex-row gap-4 flex-wrap justify-center mx-10">
         {projects.map((item) => (
         <CardContainer className="inter-var" key={item.id}>
-      <CardBody className=" relative group/card dark:hover:shadow-2xl bg-white-100 bg-opacity-15 dark:hover:shadow-black-400/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] rounded-xl p-6 border">
+      <CardBody className=" relative group/card dark:hover:shadow-2xl bg-black-300 bg-opacity-40 dark:hover:shadow-black-400/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] rounded-xl p-6 border">
         <CardItem translateZ="100" className="w-full">
           {/* img */}
           <img
