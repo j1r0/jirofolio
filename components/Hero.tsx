@@ -83,8 +83,8 @@ const Hero = () => {
               />
             </a>
           </div>
-          <a href="#about" className={`m-auto items-center absolute w-fit sm:bottom-20 md:bottom-0 left-0 right-0 flex justify-center pb-10 hover:translate-y-1 transition duration-200 ${isScrolled ? "opacity-0 pointer-events-none" : ""}`} >
-            <PiCaretDoubleDown className="text-white-100 text-3xl scale-x-[200%] animate-pulse hover:animate-none" />
+          <a href="#about" className={`sm:hidden m-auto items-center absolute w-fit md:bottom-0 left-0 right-0 flex justify-center pb-10 hover:translate-y-1 transition duration-200 ${isScrolled ? "opacity-0 pointer-events-none" : ""}`} >
+            <PiCaretDoubleDown className=" text-white-100 text-3xl scale-x-[200%] animate-pulse hover:animate-none" />
           </a>
 
         </HeroHighlight>

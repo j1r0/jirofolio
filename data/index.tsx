@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { title } from "process";
 import { FaJava } from "react-icons/fa6";
 import {
@@ -7,6 +8,11 @@ import {
   SiDart,
   SiExpress,
   SiFlutter,
+  SiGithub,
+  SiGmail,
+  SiGoogle,
+  SiInstagram,
+  SiLinkedin,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
@@ -24,7 +30,7 @@ export const navItems = [
 ];
 
 export const aboutMe = [
-  "For me, Software engineering is not just about creating code; it's about crafting solutions that improve lives, foster innovation, and drive progress.",
+  "Software Engineering is not just about creating code; it's about crafting solutions that improve lives, foster innovation, and drive progress.",
 ];
 
 export const gridItems = [
@@ -41,7 +47,7 @@ export const gridItems = [
   {
     id: 2,
     title: "Enriches lives & Impacts communities.",
-    description: "I develop software that ",
+    description: "I develop software that",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -68,7 +74,7 @@ export const projects = [
     id: 1,
     title: "ERAU SASE Website",
     des: "An engaging and interactive website for a growing school organization with over 100 members. Its creation significantly enhanced the online presence and member engagement.",
-    img: "/p1.svg",
+    img: "/sasewebsite.png",
     iconLists: [
       <SiReact />,
       <SiVite />,
@@ -76,13 +82,15 @@ export const projects = [
       <SiNodedotjs />,
       <SiExpress />,
     ],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    figma: "https://www.figma.com/design/asLSI4MLL23B2DAWEvW7XJ/SASE-Website?node-id=0-1&t=k5Sa2PpU2Liv9HSW-1",
+    link: "https://sase-website.pages.dev",
+    linktype: "Website",
   },
   {
     id: 2,
     title: "FitSage",
     des: "An at-home fitness and nutrition app designed to combat health challenges for students that features a workout planner and tracks nutrient intake and body metrics.",
-    img: "/p2.svg",
+    img: "/fitsage.png",
     iconLists: [
       <SiFlutter />,
       <SiDart />,
@@ -90,13 +98,15 @@ export const projects = [
       <SiSqlite />,
       <SiAndroid />,
     ],
-    link: "https://github.com/your-username/fit-sage",
+    figma: "",
+    link: "https://github.com/ERAUFitnessTracker/FitSage",
+    linktype: "GitHub",
   },
   {
     id: 3,
     title: "Visionary",
-    des: "A visually stunning and modern photography website. It functions as a photo database and a dynamic portfolio, showcasing work with a sleek, responsive design.",
-    img: "/p3.svg",
+    des: "A lightweight and easy-to-use photography website. It functions as a photo database and a dynamic portfolio, showcasing work with a sleek, responsive design.",
+    img: "/visionary.png",
     iconLists: [
       <SiReact />,
       <SiNodedotjs />,
@@ -104,7 +114,9 @@ export const projects = [
       <SiMysql />,
       <SiChakraui />,
     ],
-    link: "https://github.com/your-username/visionary-portfolio",
+    figma: "https://www.figma.com/design/7zc5jB6tZND5YSb4nNW2gH/Visionary?node-id=0-1&t=q3KLwCAOE9VUwNAO-1",
+    link: "https://github.com/j1r0/visionary",
+    linktype: "GitHub",
   },
 ];
 
@@ -142,15 +154,18 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    icon: <SiLinkedin />,
+    link: "https://www.linkedin.com/in/jpamplona28/",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    icon: <SiGoogle />,
+    link: "mailto:pamplonajimp@gmail.com",
   },
   {
     id: 3,
-    img: "/link.svg",
+    icon: <SiGithub />,
+    link: "https://github.com/j1r0",
   },
 ];
 export const technologies1 = [

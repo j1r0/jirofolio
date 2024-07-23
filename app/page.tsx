@@ -4,6 +4,7 @@ import { FaUser } from "react-icons/fa";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import { navItems } from "@/data";
+import Contacts from "@/components/Contacts";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Contacts />
       </div>
     </main>
   );

@@ -6,7 +6,9 @@ import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const About = () => {
   return (
-    <section id="about" className="px-4 md:px-[10vw] py-10 bg-black">
+    <section id="about" className="h-full w-screen dark:bg-black bg-white bg-grid-small-white/[0.15] relative flex flex-col items-center justify-center py-10">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_0%,transparent_0%,transparent_0%,transparent_0%,black)]"></div>
       <div className="relative pb-10">
         <h1 className="text-4xl font-extralight text-center">
           A Little {" "}
@@ -15,7 +17,7 @@ const About = () => {
           </span>
         </h1>
       </div>
-      <div className="pb-10 font-thin text-center text-xl md:text-2xl lg:text-3xl font-serif w-full px-20 lg:px-40">
+      <div className="pb-10 font-thin text-center text-xl md:text-2xl lg:text-3xl font-sans w-full px-20 lg:px-40">
         {aboutMe.map((text) => (
           <div key={text}>
           <h1>{text}</h1>
