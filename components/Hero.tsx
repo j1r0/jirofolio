@@ -66,7 +66,7 @@ const Hero = () => {
               />
             </span>
             <TextGenerateEffect
-              className="text-center text-[1.7rem] md:text-6xl lg:text-7xl text-white-100 font-extralight"
+              className="text-center text-[1.7rem] md:text-[2.5rem] lg:text-5xl xl:text-6xl 2xl:text-7xl text-white-100 font-extralight"
               words={"Hello, I'm Jim Pamplona"}
             />
             <TextGenerateEffect className="text-center text-sm font-extralight md:tracking-widest mb-4 md:text-lg lg:text-2xl text-white-200 pb-11" words="
@@ -83,7 +83,7 @@ const Hero = () => {
               />
             </a>
           </div>
-          <a href="#about" className={`m-auto items-center absolute w-fit bottom-0 left-0 right-0 flex justify-center pb-10 hover:translate-y-1 transition duration-200 ${isScrolled ? "opacity-0 pointer-events-none" : ""}`} >
+          <a href="#about" className={`m-auto items-center absolute w-fit sm:bottom-20 md:bottom-0 left-0 right-0 flex justify-center pb-10 hover:translate-y-1 transition duration-200 ${isScrolled ? "opacity-0 pointer-events-none" : ""}`} >
             <PiCaretDoubleDown className="text-white-100 text-3xl scale-x-[200%] animate-pulse hover:animate-none" />
           </a>
 

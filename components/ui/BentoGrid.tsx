@@ -52,11 +52,11 @@ export const BentoGridItem = ({
 }) => {
   return (
     <Button
-      containerClassName={className}
-      className="row-span-1 relative p-4 rounded-3xl group/bento hover:shadow-lg hover:shadow-black-200 transition duration-200 justify-between flex flex-col space-y-4 bg-transparent h-full w-full overflow-hidden"
+      containerClassName={`hover:-translate-y-1 transition duration-200 ${className}`}
+      className="row-span-1 relative p-4 rounded-3xl group/bento justify-between flex flex-col space-y-4 bg-transparent h-full w-full overflow-hidden"
       as="div"
       borderClassName="bg-[radial-gradient(var(--white-100)_40%,transparent_60%)]"
-      duration={8000}
+      duration={id === 3 ? 40000 : id === 2 ? 20000 : 50000}
     >
 
 
@@ -102,13 +102,7 @@ export const BentoGridItem = ({
           className={cn(
             titleClassName,
             `relative md:h-full min-h-40 flex flex-col 
-            ${
-              id === 1
-                ? "group-hover/bento:-translate-y-2 transition duration-200"
-                : id === 3
-                ? "group-hover/bento:-translate-x-2 transition duration-200"
-                : "group-hover/bento:translate-x-2 transition duration-200"
-            }`
+            `
           )}
         >
           
