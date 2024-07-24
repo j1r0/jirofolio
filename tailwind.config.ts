@@ -42,10 +42,12 @@ const config = {
         },
         beige: {
           DEFAULT: "#e3d9cf",
-          100: "#F7F1EB",
+          100: "#f0edeb",
+          200: "#F7F1EB",
         },
         sage: {
-          DEFAULT: "#BCCDB9"
+          DEFAULT: "#808C6C",
+          100: "#BCCDB9",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

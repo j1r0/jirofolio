@@ -3,11 +3,6 @@ import { AuroraBackground } from "./ui/Aurora";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { TypeAnimation } from "react-type-animation";
-import MagicButton from "./MagicButton";
-import {  FaLocationArrow } from "react-icons/fa";
-import { HeroHighlight, Highlight } from "./ui/HeroHighlight";
-import { PiCaretDoubleDown, PiCaretDoubleDownThin, PiDownloadSimple, PiDownloadSimpleBold, PiDownloadSimpleThin } from "react-icons/pi";
-import { useEffect, useState } from "react";
 
 const Hero = () => {
   return (
@@ -39,7 +34,7 @@ const Hero = () => {
           <div className="w-screen px-8  xl:px-20 xl:pb-20 2xl:pb-40 2xl:px-40 flex flex-col xl:items-start xl:justify-end items-center justify-center h-screen ">
 
           {/* Typer */}
-            <span className="uppercase tracking-widest text-md md:text-lg lg:text-2xl text-base text-center font-display2 text-transparent text-stroke-thin text-stroke-beige">
+            <span className="uppercase tracking-widest text-md md:text-lg lg:text-2xl text-base text-center font-display2 text-transparent text-stroke-thin dark:text-stroke-beige text-stroke-sage">
               <TypeAnimation
                 sequence={[
                   2000,
@@ -58,12 +53,12 @@ const Hero = () => {
 
             {/* Heading */}
             <TextGenerateEffect
-              className="my-4 xl:my-0 relative text-center text-[2.8rem] xl:text-left md:text-7xl  xl:text-8xl 2xl:text-9xl text-beige uppercase font-extralight font-display1 "
+              className="my-4 xl:my-0 relative text-center text-[2.8rem] xl:text-left md:text-7xl  xl:text-8xl 2xl:text-9xl dark:text-beige text-sage uppercase font-extralight font-display1 "
               words={"Jim Pamplona"}
             />
             {/* Subheading */}
             <div className="w-[80%] xl:w-[60%]">
-            <TextGenerateEffect className="relative xl:text-left text-center text-sm font-extralight md:tracking-widest mb-4 md:text-xl lg:text-2xl text-beige pb-11" words="
+            <TextGenerateEffect className="relative xl:text-left text-center text-sm font-extralight md:tracking-widest mb-4 md:text-xl lg:text-2xl dark:text-beige text-sage pb-11" words="
               I&apos;m a first-generation student from Guam who has faced the unknown and is resiliently turning dreams to reality.">
             </TextGenerateEffect>
             </div>
@@ -77,7 +72,7 @@ const Hero = () => {
                 otherClasses="rounded-lg"
               /> */}
 
-              <button className="relative inline-flex overflow-hidden px-4 py-2 border-beige border-[1px] rounded-[10px] font-light tracking-widest uppercase text-sm md:text-base lg:text-3xl text-beige hover:-translate-y-1 transition duration-200">Check out my resume
+              <button className="relative inline-flex overflow-hidden px-4 py-2 dark:border-beige border-sage border-[1px] rounded-[10px] font-light tracking-widest uppercase text-sm md:text-base lg:text-3xl dark:text-beige text-sage hover:-translate-y-1 transition duration-200">Check out my resume
                 </button>
             </a>
           </div>

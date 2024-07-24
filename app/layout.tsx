@@ -22,8 +22,8 @@ export default function RootLayout({
     <html lang="en"className={`${fira.variable} ${cormorant.variable} ${krona.variable} ${amarante.variable} font-sans`} >
       <body className={fira.className}> <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
-            enableSystem
+            defaultTheme="system"
+            enableSystem={true}
             disableTransitionOnChange
           >
             {children}

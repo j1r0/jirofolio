@@ -9,7 +9,7 @@ const Contacts = () => {
         <footer id="contact" className="h-full w-screen   relative flex flex-col items-center justify-center py-10 px-20">
 
 
-          <div className="mx-10 flex mt-16 flex-col justify-between items-center">
+          <div className="flex mt-16 flex-col justify-between items-center">
     
             <div className="flex items-center md:gap-3 gap-6">
               {socialMedia.map((info) => (
@@ -22,7 +22,7 @@ const Contacts = () => {
                 </a>
               ))}
             </div>
-            <p className="text-white-200 relative sm:pt-4 md:text-base text-sm md:font-normal font-extralight tracking-wider">
+            <p className="text-white-200 relative pt-4 md:text-base text-sm md:font-normal font-extralight tracking-wider text-center">
               Copyright 2024 © Jim Pamplona
             </p>
           </div>
