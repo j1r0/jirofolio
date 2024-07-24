@@ -8,7 +8,7 @@ import { SiFigma } from "react-icons/si";
 
 const Projects = () => {
   return (
-    <div id="projects" className="h-full w-screen dark:bg-black bg-white  relative flex flex-col items-center justify-center py-10 px-20">
+    <div id="projects" className="h-full w-screen relative flex flex-col items-center justify-center py-10 px-20">
       <div className="relative pb-10">
         <h1 className="text-4xl font-extralight text-center">
           Some of my{" "}

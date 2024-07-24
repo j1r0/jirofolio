@@ -41,7 +41,8 @@ const config = {
           200: "#CECECE",
         },
         beige: {
-          DEFAULT: "#F7F1EB"
+          DEFAULT: "#e3d9cf",
+          100: "#F7F1EB",
         },
         sage: {
           DEFAULT: "#BCCDB9"

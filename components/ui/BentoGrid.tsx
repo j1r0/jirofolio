@@ -55,14 +55,14 @@ export const BentoGridItem = ({
       containerClassName={`hover:-translate-y-1 transition duration-200 ${className}`}
       className="row-span-1 relative p-4 rounded-3xl group/bento justify-between flex flex-col space-y-4 bg-transparent h-full w-full overflow-hidden"
       as="div"
-      borderClassName="bg-[radial-gradient(var(--white-100)_40%,transparent_60%)]"
+      borderClassName="bg-[radial-gradient(#f7f1eb_40%,transparent_60%)]"
       duration={id === 3 ? 40000 : id === 2 ? 20000 : 50000}
     >
 
 
 
         {/* Images */}
-        <div className="w-full h-full absolute">
+        <div className="w-full h-full absolute text-beige">
           {id === 1 ? (
             <img
               src={img}

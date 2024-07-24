@@ -10,27 +10,9 @@ import { PiCaretDoubleDown, PiCaretDoubleDownThin, PiDownloadSimple, PiDownloadS
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    if (scrollTop > 0.00) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div>
-      <div className="h-dvh w-screen bg-black flex items-center justify-center absolute top-0 left-0">
+      <div className="h-dvh w-screen flex items-center justify-center absolute top-0 left-0">
         <div>
           <AuroraBackground>
             <motion.div
@@ -46,16 +28,18 @@ const Hero = () => {
           </AuroraBackground>
         </div>
       </div>
-      <div className= "w-screen flex items-center justify-center relative bg-[url('/noise.svg')]">
+      <div className= "flex items-center justify-center relative ">
           {/* Gradient */}
-          <div className="w-screen h-full absolute opacity-70 blur-2xl flex justify-end items-end -right-96 -bottom-96 scale-75">
-            <img className="pointer-events-none z-0 opacity-80" src="/gradient.svg" />
+          <div className="absolute opacity-50 xl:opacity-70 xl:-right-96 ">
+            <img className="pointer-events-none blur-xl -z-[1] h-[90vw] xl:h-[70vw]" src="/gradient.svg" />
           </div>
+
+
           {/* Content */}
-          <div className="w-screen px-20 lg:pb-40 lg:px-30 flex flex-col lg:items-start lg:justify-end items-center justify-center h-screen ">
+          <div className="w-screen px-8  xl:px-20 xl:pb-20 2xl:pb-40 2xl:px-40 flex flex-col xl:items-start xl:justify-end items-center justify-center h-screen ">
 
           {/* Typer */}
-            <span className="uppercase tracking-widest md:text-lg lg:text-xl text-base text-center font-display2 text-transparent text-stroke-thin text-stroke-beige ">
+            <span className="uppercase tracking-widest text-md md:text-lg lg:text-2xl text-base text-center font-display2 text-transparent text-stroke-thin text-stroke-beige">
               <TypeAnimation
                 sequence={[
                   2000,
@@ -74,12 +58,12 @@ const Hero = () => {
 
             {/* Heading */}
             <TextGenerateEffect
-              className="relative text-center text-6xl md:text-left lg:text-6xl xl:text-8xl 2xl:text-9xl text-beige uppercase font-extralight font-display1 "
+              className="my-4 xl:my-0 relative text-center text-[2.8rem] xl:text-left md:text-7xl  xl:text-8xl 2xl:text-9xl text-beige uppercase font-extralight font-display1 "
               words={"Jim Pamplona"}
             />
             {/* Subheading */}
-            <div className="lg:w-[60%]">
-            <TextGenerateEffect className="relative lg:text-left text-center text-sm font-extralight md:tracking-widest mb-4 md:text-lg lg:text-2xl text-beige pb-11" words="
+            <div className="w-[80%] xl:w-[60%]">
+            <TextGenerateEffect className="relative xl:text-left text-center text-sm font-extralight md:tracking-widest mb-4 md:text-xl lg:text-2xl text-beige pb-11" words="
               I&apos;m a first-generation student from Guam who has faced the unknown and is resiliently turning dreams to reality.">
             </TextGenerateEffect>
             </div>
@@ -93,7 +77,7 @@ const Hero = () => {
                 otherClasses="rounded-lg"
               /> */}
 
-              <button className="relative inline-flex overflow-hiddenp px-4 py-2 border-beige border-[3px] rounded-[10px] font-normal tracking-widest uppercase">Check out my resume
+              <button className="relative inline-flex overflow-hidden px-4 py-2 border-beige border-[1px] rounded-[10px] font-light tracking-widest uppercase text-sm md:text-base lg:text-3xl text-beige hover:-translate-y-1 transition duration-200">Check out my resume
                 </button>
             </a>
           </div>

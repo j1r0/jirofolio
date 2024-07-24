@@ -6,7 +6,7 @@ import MagicButton from './MagicButton';
 
 const Contacts = () => {
     return (
-        <footer id="contact" className="h-full w-screen dark:bg-black bg-white  relative flex flex-col items-center justify-center py-10 px-20">
+        <footer id="contact" className="h-full w-screen   relative flex flex-col items-center justify-center py-10 px-20">
 
 
           <div className="mx-10 flex mt-16 flex-col justify-between items-center">
@@ -15,7 +15,7 @@ const Contacts = () => {
               {socialMedia.map((info) => (
                 <a href={info.link} key={info.id}>
                 <button
-                  className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                  className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-sm saturate-180 bg-transparent rounded-lg border border-black-300"
                 >
                     {info.icon}
                 </button>
