@@ -1,3 +1,4 @@
+import { DEFAULT } from "@react-three/fiber/dist/declarations/src/core/utils";
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -38,6 +39,12 @@ const config = {
           DEFAULT: "#f7f7f7",
           100: "#EDEDED",
           200: "#CECECE",
+        },
+        beige: {
+          DEFAULT: "#F7F1EB"
+        },
+        sage: {
+          DEFAULT: "#BCCDB9"
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -169,10 +176,13 @@ const config = {
       fontFamily: {
         sans: ["var(--font-fira)"],
         serif: ["var(--font-cormorant)"],
+        display1: ["var(--font-amarante)"],
+        display2: ["var(--font-krona)"],
       },
     },
   },
   plugins: [
+    require("@designbycode/tailwindcss-text-stroke"),
     require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {

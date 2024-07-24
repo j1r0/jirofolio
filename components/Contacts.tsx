@@ -6,9 +6,7 @@ import MagicButton from './MagicButton';
 
 const Contacts = () => {
     return (
-        <footer id="contact" className="h-full w-screen dark:bg-black bg-white bg-grid-small-white/[0.15] relative flex flex-col items-center justify-center py-10 px-20">
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute bottom-0 pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(circle_at_bottom,transparent_0%,transparent_0%,transparent_0%,transparent_0%,black_50%)] lg:[mask-image:radial-gradient(circle_at_bottom,transparent_0%,transparent_0%,transparent_0%,transparent_0%,black_40%)]"></div>
+        <footer id="contact" className="h-full w-screen dark:bg-black bg-white  relative flex flex-col items-center justify-center py-10 px-20">
 
 
           <div className="mx-10 flex mt-16 flex-col justify-between items-center">

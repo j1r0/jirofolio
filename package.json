@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@designbycode/tailwindcss-text-stroke": "^1.2.1",
     "@react-three/drei": "^9.108.4",
     "@react-three/fiber": "^8.16.8",
     "clsx": "^2.1.1",
