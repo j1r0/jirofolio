@@ -7,22 +7,6 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
     <div>
-      <div className="h-dvh w-screen flex items-center justify-center absolute top-0 left-0">
-        <div>
-          <AuroraBackground>
-            <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.8,
-                ease: "easeInOut",
-              }}
-              className="relative flex flex-col gap-4 items-center justify-center"
-            ></motion.div>
-          </AuroraBackground>
-        </div>
-      </div>
       <div className= "flex items-center justify-center relative ">
           {/* Gradient */}
           <div className="absolute opacity-50 xl:opacity-70 xl:-right-96 ">

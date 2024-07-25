@@ -1,5 +1,4 @@
 import React from 'react'
-import { BackgroundBeams } from './ui/Beams'
 import { socialMedia } from '@/data'
 import { FaLocationArrow } from 'react-icons/fa6';
 import MagicButton from './MagicButton';
@@ -15,14 +14,14 @@ const Contacts = () => {
               {socialMedia.map((info) => (
                 <a href={info.link} key={info.id}>
                 <button
-                  className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-sm saturate-180 bg-transparent rounded-lg border border-black-300"
+                  className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-sm saturate-180 bg-transparent rounded-lg border dark:border-black-300 dark:text-black-300 text-sage border-sage"
                 >
                     {info.icon}
                 </button>
                 </a>
               ))}
             </div>
-            <p className="text-white-200 relative pt-4 md:text-base text-sm md:font-normal font-extralight tracking-wider text-center">
+            <p className="dark:text-beige text-black-300 relative pt-4 md:text-base text-sm md:font-normal font-extralight tracking-wider text-center">
               Copyright 2024 © Jim Pamplona
             </p>
           </div>
