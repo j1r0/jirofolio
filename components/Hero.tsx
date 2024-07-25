@@ -30,7 +30,7 @@ const Hero = () => {
 
   return (
     <div >
-      <div className="h-screen w-screen bg-black  flex items-center justify-center absolute top-0 left-0">
+      <div className="h-dvh w-screen bg-black  flex items-center justify-center absolute top-0 left-0">
         <div>
           <AuroraBackground>
             <motion.div
@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
       <div>
         <HeroHighlight>
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center h-screen ">
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center h-dvh ">
             <span className="uppercase tracking-widest md:text-sm lg:text-base text-xs text-center text-white-200">
               <TypeAnimation
                 sequence={[
@@ -75,7 +75,7 @@ const Hero = () => {
 
             <a href="./Resume - 20240719.pdf" download="Resume - 20240719">
               <MagicButton
-                title="Check out my Resume"
+                title="Download Resume"
                 icon={<PiDownloadSimpleBold className="scale-[130%]" />}
                 position="right"
                 className="h-12 rounded-lg p-[1px] md:w-60 hover:-translate-y-1 transition duration-200"
@@ -83,7 +83,7 @@ const Hero = () => {
               />
             </a>
           </div>
-          <a href="#about" className={`sm:hidden m-auto items-center absolute w-fit md:bottom-0 left-0 right-0 flex justify-center pb-10 hover:translate-y-1 transition duration-200 ${isScrolled ? "opacity-0 pointer-events-none" : ""}`} >
+          <a href="#about" className={` m-auto items-center absolute w-fit bottom-0 left-0 right-0 flex justify-center pb-10 hover:translate-y-1 transition duration-200 ${isScrolled ? "opacity-0 pointer-events-none" : ""}`} >
             <PiCaretDoubleDown className=" text-white-100 text-3xl scale-x-[200%] animate-pulse hover:animate-none" />
           </a>
 
