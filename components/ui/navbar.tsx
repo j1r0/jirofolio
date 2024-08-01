@@ -67,7 +67,7 @@ export const Navbar = ({
           duration: 0.2,
         }}
         className=
-          {`tablet:flex hidden fixed inset-x-0 w-full z-[5000] py-8 items-center justify-center ${scrolled && " backdrop-blur-md dark:border-b border-black/[0.3]"}`}
+          {`dark:bg-black/[0.8] bg-white/[0.8] tablet:flex hidden fixed inset-x-0 w-full z-[5000] py-8 items-center justify-center ${scrolled && " backdrop-blur-md dark:border-b border-black/[0.3]"}`}
     > 
     <nav className="fixed tablet:flex flex-row gap-10 items-center justify-end right-0 mx-9 pt-2 lowercase hidden">
 

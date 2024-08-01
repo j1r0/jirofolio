@@ -86,17 +86,18 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const projectList = [
   {
     id: 1,
     title: "ERAU SASE Website",
-    des: "An engaging and interactive website for a growing school organization with over 100 members. Its creation significantly enhanced the online presence and member engagement.",
+    des: "An engaging and interactive website for a growing school organization (SASE) significantly enhanced the online presence and member engagement, allowing members to easily access resources and stay updated on events.",
     img: "/sasewebsite.png",
     iconLists: [
       <SiReact />,
       <SiVite />,
       <SiTailwindcss />,
       <SiNodedotjs />,
+
       <SiExpress />,
     ],
     figma:
@@ -107,7 +108,7 @@ export const projects = [
   {
     id: 2,
     title: "FitSage",
-    des: "An at-home fitness and nutrition app designed to combat health challenges for students that features a workout planner and tracks nutrient intake and body metrics.",
+    des: "An at-home fitness and nutrition app was designed to combat health challenges for students, featuring a workout planner and tracking nutrient intake and body metrics. This was created to provide a comprehensive tool for maintaining a healthy lifestyle during the COVID-19 pandemic.",
     img: "/fitsage.png",
     iconLists: [
       <SiFlutter />,
@@ -115,6 +116,7 @@ export const projects = [
       <FaJava />,
       <SiSqlite />,
       <SiAndroid />,
+      
     ],
     figma: "",
     link: "https://github.com/ERAUFitnessTracker/FitSage",
@@ -123,7 +125,7 @@ export const projects = [
   {
     id: 3,
     title: "Visionary",
-    des: "A lightweight and easy-to-use photography website. It functions as a photo database and a dynamic portfolio, showcasing work with a sleek, responsive design.",
+    des: "A lightweight and easy-to-use photography website functions as a photo database and a dynamic portfolio, showcasing work with a sleek, responsive design. It's particularly useful for photographers looking to present their work professionally and accessibly, making it easy for clients and viewers to explore their portfolio on any device.",
     img: "/visionary.png",
     iconLists: [
       <SiReact />,
