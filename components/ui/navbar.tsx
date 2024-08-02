@@ -53,12 +53,10 @@ export const Navbar = ({
         initial={{
           opacity: 1,
           y: -100,
-        boxShadow: "none",
         }}
         animate={{
           y: visible ? 0 : -100,
           opacity: visible ? 1 : 0,
-          boxShadow: scrolled ? "0px 4px 12px rgba(0, 0, 0, 0.1)" : "none",
           top: scrolled ? 0 : 10,
           
 
@@ -67,14 +65,16 @@ export const Navbar = ({
           duration: 0.2,
         }}
         className=
-          {`dark:bg-black/[0.8] bg-white/[0.8] tablet:flex hidden fixed inset-x-0 w-full z-[5000] py-8 items-center justify-center ${scrolled && " backdrop-blur-md dark:border-b border-black/[0.3]"}`}
+          {`tablet:flex fixed inset-x-0 max-w-[22rem] mx-auto tablet:mt-0 tablet:max-w-none tablet:w-full z-[5000] items-center justify-center tablet:border-none tablet:rounded-none tablet:p-0 rounded-full
+            
+            ${scrolled && "backdrop-blur-md tablet:dark:border-white-100/[0.3] tablet:border-black/[0.3] drop-shadow-lg border-black-100/[0.5] dark:border-white-100/[0.5] border-[.5px] mt-4 "}`}
     > 
-    <nav className="fixed tablet:flex flex-row gap-10 items-center justify-end right-0 mx-9 pt-2 lowercase hidden">
+    <nav className="flex flex-row gap-1 tablet:gap-10 items-center justify-between tablet:justify-end tablet:right-0 relative tablet:mx-9 mx-4 lowercase tablet:w-screen py-4 ">
 
         <ThemeSwitcher />
         {navItems.map((item) => (
             <Link
-                className="hover:opacity-70 transition duration-200"
+                className="hover:opacity-70 transition duration-200 text-sm tablet:text-lg"
                 key={item.name}
                 href={item.link}
             >
@@ -82,7 +82,7 @@ export const Navbar = ({
             </Link>
         ))}
         <a href="/JP_Resume.pdf" download="/JP_Resume.pdf">
-        <button className='dark:bg-white bg-black-100 dark:text-black-100 text-white rounded-[.2rem] px-4 py-2 font-bold lowercase hover:opacity-80 transition duration-200'>Resume</button>
+        <button className='dark:bg-white bg-black-100 dark:text-black-100 text-white tablet:rounded-[.2rem] rounded-full px-2 py-1 tablet:px-4 tablet:py-2 font-bold lowercase hover:opacity-80 transition duration-200 tracking-wider'>Resume</button>
         </a>
 
     </nav>

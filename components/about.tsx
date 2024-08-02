@@ -6,7 +6,7 @@ const about = () => {
     <section className="flex flex-col gap-10 py-10" id="about">
       <div className="flex desktop:flex-row flex-col desktop:gap-x-20 gap-y-3 desktop:gap-y-0 items-center justify-center desktop:justify-start tablet_lg:mx-28">
         <h2 className="text-4xl font-bold tracking-widest ">about me.</h2>
-        <div className="w-96 border-[0.5px] dark:border-[#f2eeea]/50 border-[#5a5a5a]/50"></div>
+        <div className="w-80 tablet:w-96 border-[0.5px] dark:border-[#f2eeea]/50 border-[#5a5a5a]/50"></div>
       </div>
 
       <div className="flex flex-col desktop:flex-row mx-10 tablet:mx-20 tablet_lg:mx-40 gap-20 desktop:gap-40 items-center justify-center desktop:justify-between">
