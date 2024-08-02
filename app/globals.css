@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+@layer base {
+  * {
+    @apply !scroll-smooth;
+  }
+}
 
 @layer utilities {
   .text-balance {
