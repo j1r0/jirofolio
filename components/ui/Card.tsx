@@ -25,15 +25,13 @@ export const Card: React.FC<CardProps> = ({
   figma,
 }) => {
   const isEven = id % 2 === 0;
-const translateIcons = (index: number) => {
-  return `${isEven ? -5 * index : -5 * index + 5 * (iconLists.length - 1)}px`;
-};
+
 
   
 
   return (
     <div className={`group flex gap-4 desktop:gap-8 justify-evenly items-center flex-col  ${isEven ? "desktop:flex-row desktop:text-right" : "desktop:flex-row-reverse"}`}>
-      <div className={`-z-[1] relative min-w-full desktop:min-w-[40rem] duration-300 opacity-20 desktop:opacity-100 ${isEven ? "desktop:group-hover:translate-x-20":"desktop:group-hover:-translate-x-20"} border rounded-md border-transparent overflow-clip  `} >
+      <div className={`-z-[1] relative min-w-full desktop:min-w-[40rem] duration-300 opacity-20 desktop:opacity-100 ${isEven ? "desktop:group-hover:translate-x-24":"desktop:group-hover:-translate-x-24"} border rounded-md border-transparent overflow-clip  `} >
 
         <img
           className={`h-96 object-cover object-center rounded-md min-w-full grayscale desktop:group-hover:grayscale-0 duration-300  `}
