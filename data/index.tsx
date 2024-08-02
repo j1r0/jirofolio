@@ -1,23 +1,25 @@
 import { FaJava } from "react-icons/fa6";
 import {
   SiAndroid,
-  SiBootstrap,
+  SiC,
   SiChakraui,
+  SiCplusplus,
   SiDart,
   SiExpress,
   SiFlutter,
   SiGithub,
-  SiGmail,
   SiGoogle,
-  SiInstagram,
+  SiJavascript,
   SiLinkedin,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
+  SiPython,
   SiReact,
   SiSqlite,
   SiTailwindcss,
+  SiTypescript,
   SiVite,
 } from "react-icons/si";
 
@@ -97,7 +99,6 @@ export const projectList = [
       <SiVite />,
       <SiTailwindcss />,
       <SiNodedotjs />,
-
       <SiExpress />,
     ],
     figma:
@@ -189,55 +190,77 @@ export const socialMedia = [
     link: "https://github.com/j1r0",
   },
 ];
-export const technologies1 = [
+export const technologies = [
   {
     title: "Next.js",
+    icon: <SiNextdotjs />,
   },
   {
     title: "Tailwind CSS",
+    icon: <SiTailwindcss />,
   },
   {
     title: "Java",
+    icon: <FaJava />,
   },
   {
     title: "Python",
+    icon: <SiPython />,
   },
   {
     title: "C",
+    icon: <SiC />,
   },
-];
-
-export const technologies2 = [
   {
     title: "JavaScript",
+    icon: <SiJavascript />,
   },
   {
     title: "TypeScript",
+    icon: <SiTypescript />,
   },
   {
     title: "MySQL",
+    icon: <SiMysql />,
   },
   {
     title: "Node.js",
+    icon: <SiNodedotjs />,
   },
   {
     title: "C++",
+    icon: <SiCplusplus />,
   },
-];
-export const technologies3 = [
   {
     title: "Express.js",
+    icon: <SiExpress />,
   },
   {
     title: "Dart",
-  },
-  {
-    title: "MATLAB",
+    icon: <SiDart />,
   },
   {
     title: "MongoDB",
+    icon: <SiMongodb />,
   },
   {
     title: "React",
+    icon: <SiReact />,
+  },
+  {
+    title: "Chakra UI",
+    icon: <SiChakraui />,
+  },
+  {
+    title: "SQLite",
+    icon: <SiSqlite />,
+  },
+  {
+    title: "Flutter",
+    icon: <SiFlutter />,
+  },
+  {
+    title: "GitHub",
+    icon: <SiGithub />,
   },
 ];

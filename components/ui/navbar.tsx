@@ -48,7 +48,7 @@ export const Navbar = ({
 
 
   return (
-    <AnimatePresence mode="popLayout">
+    <AnimatePresence mode="wait">
         <motion.div 
         initial={{
           opacity: 1,
@@ -73,13 +73,13 @@ export const Navbar = ({
 
         <ThemeSwitcher />
         {navItems.map((item) => (
-            <a
+            <Link
                 className="hover:opacity-70 transition duration-200"
                 key={item.name}
                 href={item.link}
             >
                 {item.name}
-            </a>
+            </Link>
         ))}
         <a href="/JP_Resume.pdf" download="/JP_Resume.pdf">
         <button className='dark:bg-white bg-black-100 dark:text-black-100 text-white rounded-[.2rem] px-4 py-2 font-bold lowercase hover:opacity-80 transition duration-200'>Resume</button>

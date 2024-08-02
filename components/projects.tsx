@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from './ui/Card'
-import { projectList } from '../data/index'
+import { projectList, technologies } from '../data/index'
+import { InfiniteMovingCards } from './ui/InfiniteMovingCards'
 
 const projects = () => {
   return (
@@ -26,6 +27,12 @@ const projects = () => {
          </div>
       ))
     }
+    <InfiniteMovingCards
+              items= { technologies }
+              speed = "slow"
+              pauseOnHover = {false}
+              className='w-screen pt-10'
+              />
     </div>
     </section>
   )

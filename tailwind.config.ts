@@ -1,8 +1,15 @@
 import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
-
-const config: Config = {
+const defaultTheme = require("tailwindcss/defaultTheme");
+ 
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+ 
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -34,9 +41,21 @@ const config: Config = {
           200: 'E4D9CF'
         }
       },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
     },
   },
   plugins: [
+    require("tailwindcss-animate"),
     require("@designbycode/tailwindcss-text-stroke"),
     nextui({
       themes: {
@@ -61,4 +80,5 @@ const config: Config = {
   ],
 };
 
-export default config;
+
+
