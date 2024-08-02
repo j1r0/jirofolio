@@ -6,13 +6,14 @@ import { ThemeSwitcher } from "../components/ui/ThemeSwitcher";
 import  {Navbar}  from "../components/ui/navbar";
 import { navItems } from "@/data";
 import ContactsBars from "@/components/ui/ContactsBars";
-import TextureMeshComponent from "@/components/ui/TexturedMesh";
+
+import TexturedMeshComponent from "@/components/ui/TexturedMesh";
 
 export default function Home() {
   return (
-    <main className = "relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="absolute -z-[1] w-full h-full dark:opacity-5 opacity-60 dark:blur-none blur-md">
-      <TextureMeshComponent />
+    <main className = "relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
+      <div className="fixed top-0 -z-10 w-screen h-screen dark:opacity-5 opacity-20">
+      <TexturedMeshComponent />
       </div>
       <div className="w-screen">
         <ContactsBars />
