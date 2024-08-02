@@ -1,8 +1,8 @@
 import React from 'react'
 
-const contacts = () => {
+const footer = () => {
   return (
-    <footer className="z-10 relative flex flex-col gap-10 py-10" id="about">
+    <footer className=" flex flex-col gap-10 py-10" id="about">
     <div className="relative flex flex-col desktop:gap-x-20 gap-y-10 items-center justify-center tablet_lg:mx-28">
       <div className="w-80 tablet:w-96 border-[0.5px] dark:border-[#f2eeea]/50 border-[#5a5a5a]/50"></div>
     <h2 className="text-4xl font-bold tracking-widest text-center">connect with me</h2>
@@ -20,4 +20,4 @@ const contacts = () => {
   )
 }
 
-export default contacts
+export default footer

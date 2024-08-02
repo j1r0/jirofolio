@@ -6,7 +6,7 @@ const ContactsBars = () => {
   return (
     
     <div className='flex justify-center '>
-      <div className="-z-[1] fixed flex w-[95vw] flex-row bottom-0 items-end justify-between ">
+      <div className=" fixed flex w-[95vw] flex-row bottom-0 items-end justify-between ">
         <div className="relative flex flex-col gap-5 justify-center items-center ">
           {contactList.map((contact, id) => contact.title !== 'Email' && (
             <a href={contact.link} key={id} className="hover:opacity-70 hover:-translate-y-1 ease-soft-spring text-xl transition duration-200">
